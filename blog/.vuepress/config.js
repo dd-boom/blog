@@ -131,7 +131,8 @@ module.exports = {
                 'Vue',
                 'Vue组件',
                 'Vue-Cli',
-                'Vue-Router'
+                'Vue-Router',
+                'VueX'
             ],
 
             '/codeblock/':[
