@@ -132,14 +132,15 @@ module.exports = {
                 'Vue组件',
                 'Vue-Cli',
                 'Vue-Router',
-                'VueX'
+                'VueX',
+                'React'
             ],
 
             '/codeblock/':[
                 //'',
                 'vue双向绑定结合组件通讯',
                 'vue作用域插槽',
-                '函数节流和防抖'
+                '函数节流和防抖',
             ]
             // // fallback
             // '/': [

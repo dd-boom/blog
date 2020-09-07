@@ -1,16 +1,16 @@
 ---
 home: true
-heroText: 旦旦boom!
-tagline: 旦旦而学之,久而不怠焉,迄乎成
+heroText: 菜鸡旦的自我修养
+tagline: 旦旦而学之，久而不怠焉，迄乎成
 actionText: 查看笔记 →
 actionLink: /notes/
 features:
-- title: 博客
-  details: 吸收内化,总结输出,共享共赢
-- title: 笔记
-  details: 忘了赶紧翻啊魂淡~~~
-- title: 与其说它是个网站
-  details: 不如说它是我个人的学习工具(doge)
+- title: biu biu biu ~
+  details: 都督赌都嘟督赌都都督赌都嘟督赌都(dong dong dong ~)
+- title: 吾日三省吾身
+  details: 写bug了吗？改bug了吗？又写bug了吗？
+- title: 娜~~~兹嘣呀~~~噶哇尼~吉娃娃~
+  details: 
 # footer:  biu~ boom!
 ---
 
