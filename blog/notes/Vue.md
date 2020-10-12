@@ -60,7 +60,7 @@ Vue.js 是一个基于MVVM模式的一套渐进式框架。它是以数据驱动
     * View
     * ViewModel  类似与MVP中的Presenter，唯一的区别是，它采用双向绑定：View的变动，自动反映在 ViewModel，反之亦然
 
-    ![MVVM](assets/img/mvvm.png "MVVM")
+    ![MVVM](/assets/img/mvvm.png "MVVM")
 
     - 核心思想：关注Model的变化，让MVVM框架利用自己的机制去自动更新DOM，从而把开发者从操作DOM的繁琐中解脱出来！
 
@@ -211,14 +211,14 @@ Vue.js 是一个基于MVVM模式的一套渐进式框架。它是以数据驱动
 
 ## 生命周期
 
-![生命周期](assets/img/vue_lifecycle.png)
+![生命周期](/assets/img/vue_lifecycle.png)
 
 
 ### 生命周期函数（钩子函数）
 
 >在某个时刻被自动执行的函数，生命周期函数中的this指向实例，以下为v1.x与v2.x钩子函数对照表：
 
-![钩子函数](assets/img/lifecycle_hooks.png)
+![钩子函数](/assets/img/lifecycle_hooks.png)
 
 * beforeCreate()
     * 初始化完成，但为往实例添加属性

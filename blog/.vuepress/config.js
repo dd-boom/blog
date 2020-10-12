@@ -15,11 +15,11 @@ module.exports = {
                 link: '/webblogs/',
                 target: '_self'
             },
-            {
-                text: "笔记",
-                link: '/notes/',
-                target: '_self'
-            },
+            // {
+            //     text: "笔记",
+            //     link: '/notes/',
+            //     target: '_self'
+            // },
             {
                 text: "代码块",
                 link: '/codeblock/',
@@ -37,10 +37,14 @@ module.exports = {
             },
             {
                 text: "文档",
-                items:[
-                    {
+                items: [{
                         text: "vue",
                         link: 'https://cn.vuejs.org/',
+                        target: '_blank'
+                    },
+                    {
+                        text: "MDN",
+                        link: 'https://developer.mozilla.org/zh-CN/',
                         target: '_blank'
                     },
                     {
@@ -49,14 +53,14 @@ module.exports = {
                         target: '_blank'
                     },
                     {
-                        text:"vant",
-                        link:'https://vant-contrib.gitee.io/vant/#/zh-CN/',
-                        targrt: '_blank'
-                    },
-                    {
                         text: "jQuery",
                         link: "https://jquery.cuishifeng.cn/",
                         target: '_blank'
+                    },
+                    {
+                        text: "vant",
+                        link: 'https://vant-contrib.gitee.io/vant/#/zh-CN/',
+                        targrt: '_blank'
                     },
                     {
                         text: "runoob",
@@ -64,9 +68,9 @@ module.exports = {
                         target: '_blank'
                     },
                     {
-                        text:'elementUI',
-                        link:'https://element.eleme.cn/#/zh-CN',
-                        target:'_blank'
+                        text: 'elementUI',
+                        link: 'https://element.eleme.cn/#/zh-CN',
+                        target: '_blank'
                     }
                 ]
             },
@@ -109,6 +113,7 @@ module.exports = {
         sidebar: {
             '/webblogs/': [
                 //'',
+                'V8引擎笔记整理',
                 '关于JavaScript严格模式的一些笔记',
                 'JavaScript 作用域 作用域链 变量的生命周期',
                 '工厂模式、构造函数模式、原型模式',
@@ -136,7 +141,7 @@ module.exports = {
                 'React'
             ],
 
-            '/codeblock/':[
+            '/codeblock/': [
                 //'',
                 'vue双向绑定结合组件通讯',
                 'vue作用域插槽',
@@ -148,6 +153,10 @@ module.exports = {
             //   'contact', /* /contact.html */
             //   'about'    /* /about.html */
             // ]
-        }
+        },
+
+        nextLinks: true,
+
+        prevLinks: true
     }
 }
