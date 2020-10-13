@@ -15,11 +15,11 @@ module.exports = {
                 link: '/webblogs/',
                 target: '_self'
             },
-            // {
-            //     text: "笔记",
-            //     link: '/notes/',
-            //     target: '_self'
-            // },
+            {
+                text: "笔记",
+                link: '/notes/',
+                target: '_self'
+            },
             {
                 text: "代码块",
                 link: '/codeblock/',
@@ -176,6 +176,7 @@ module.exports = {
                 'vue双向绑定结合组件通讯',
                 'vue作用域插槽',
                 '函数节流和防抖',
+                '快速排序'
             ]
             // // fallback
             // '/': [

@@ -1,6 +1,7 @@
 ---
 title: React
 ---
+# React
 
 ## 1. 了解 React
 
