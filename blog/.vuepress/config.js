@@ -38,9 +38,14 @@ module.exports = {
             {
                 text: "文档",
                 items: [{
-                        text: "vue",
+                        text: "Vue",
                         link: 'https://cn.vuejs.org/',
                         target: '_blank'
+                    },
+                    {
+                        text:"React",
+                        link:'https://react.docschina.org/',
+                        target:'_blank'
                     },
                     {
                         text: "MDN",
@@ -48,7 +53,7 @@ module.exports = {
                         target: '_blank'
                     },
                     {
-                        text: "node",
+                        text: "Node.js",
                         link: 'http://nodejs.cn/api/',
                         target: '_blank'
                     },
@@ -58,36 +63,61 @@ module.exports = {
                         target: '_blank'
                     },
                     {
-                        text: "vant",
+                        text:'微信小程序开发文档',
+                        link:'https://developers.weixin.qq.com/miniprogram/dev/framework/',
+                        target:'_blank'
+                    },
+                    {
+                        text: "Vant",
                         link: 'https://vant-contrib.gitee.io/vant/#/zh-CN/',
                         targrt: '_blank'
+                    },
+                    {
+                        text: 'ElementUI',
+                        link: 'https://element.eleme.cn/#/zh-CN',
+                        target: '_blank'
+                    },
+                    {
+                        text:'Ant Design',
+                        link:'https://ant.design/index-cn',
+                        target:'_blank'
+                    },
+                    {
+                        text:'uni-app',
+                        link:'https://uniapp.dcloud.io/README',
+                        target:'_blank'
+                    },
+                    {
+                        text:'Echarts',
+                        link:'https://echarts.apache.org/zh/index.html',
+                        target:'_blank'
                     },
                     {
                         text: "runoob",
                         link: "https://www.runoob.com/",
                         target: '_blank'
-                    },
-                    {
-                        text: 'elementUI',
-                        link: 'https://element.eleme.cn/#/zh-CN',
-                        target: '_blank'
                     }
                 ]
             },
             {
-                text: "仓库",
-                items: [{
-                        text: "GitHub",
-                        link: 'https://github.com/',
-                        target: '_blank'
-                    },
-                    {
-                        text: "gitee",
-                        link: 'https://gitee.com/',
-                        target: '_blank'
-                    }
-                ]
+                text: "GitHub",
+                link: 'https://github.com/dd-boom/blog',
+                target: '_blank'
             }
+            // {
+            //     text: "仓库",
+            //     items: [{
+            //             text: "GitHub",
+            //             link: 'https://github.com/dd-boom/blog',
+            //             target: '_blank'
+            //         }
+            //         // {
+            //         //     text: "gitee",
+            //         //     link: 'https://gitee.com/',
+            //         //     target: '_blank'
+            //         // }
+            //     ]
+            // }
             // {
             //     text: "soul",
             //     //   ariaLabel: 'soul menu',
@@ -158,5 +188,8 @@ module.exports = {
         nextLinks: true,
 
         prevLinks: true
+    },
+    markdown: {
+        lineNumbers: true
     }
 }

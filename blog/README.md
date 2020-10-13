@@ -2,8 +2,8 @@
 home: true
 heroText: 菜鸡旦的自我修养
 tagline: 旦旦而学之，久而不怠焉，迄乎成
-actionText: 查看博客 →
-actionLink: /webblogs/
+# actionText: 查看博客 →
+# actionLink: /webblogs/
 features:
 - title: biu biu biu ~
   details: 都督赌都嘟督赌都都督赌都嘟督赌都(dong dong dong ~)
