@@ -168,7 +168,10 @@ module.exports = {
                 'Vue-Cli',
                 'Vue-Router',
                 'VueX',
-                'React'
+                'webpack',
+                'React',
+                'React-router',
+                'React-cli与项目优化'
             ],
 
             '/codeblock/': [
