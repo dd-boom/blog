@@ -49,5 +49,99 @@
             }
         }
     })
+    
+    // let obj = [
+    //     {id:3,parent:2},
+    //     {id:1,parent:null},
+    //     {id:2,parent:1},
+    //     {id:4,parent:3},
+    //     {id:5,parent:4}
+    // ]
+
+    // function change(allArr,parentId){
+    //     if(allArr.some(ele => ele.parent === null)){
+    //         let node = allArr.filter(item=> item.parent === null)[0];
+    //         allArr = allArr.filter(item=> item.parent !== null);
+    //         return{
+    //             ...node,
+    //             child:change(allArr,node.id)
+    //         }
+    //     }else{
+    //         let node = allArr.filter(item=> item.parent === parentId)[0];
+    //         allArr = allArr.filter(item=> item.parent !== parentId);
+    //         if(allArr.length === 0){
+    //             return{
+    //                 ...node
+    //             }
+    //         }
+    //         return{
+    //             ...node,
+    //             child:change(allArr,node.id)
+    //         }
+    //     }
+    // }
+
+    // console.log(change(obj));
+
+    // class Allplayer{
+    //     constructor(playerList){
+    //         this.playerList = playerList
+    //     }
+    //     get(name){
+    //         let count = 0;
+    //         this.playerList.forEach(ele => {
+    //             if(ele === name) count++;
+    //         });
+    //         return count;
+    //     }
+    //     add(name){
+    //         if(typeof name == "string"){
+    //             this.playerList.push(name);
+    //         }else if(Array.isArray(name)){
+    //             this.playerList = this.playerList.concat(name);
+    //         }
+    //     }
+    // }
+    // let player = new Allplayer(["旦旦","旦旦1","旦旦2","旦旦"]);
+    // console.log("get旦旦",player.get("旦旦"));
+    // player.add(["旦旦","旦旦1","旦旦"]);
+    // console.log("get旦旦",player.get("旦旦"));
+
+    let urlList = [
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send",
+        "http://localhost:8080/send"
+
+    ]
+    function sendReq(urlList,maxNum){
+            if(urlList.length === 0) return;
+            let curUrlList = urlList.splice(0,maxNum);
+            let promiseList = [];
+            curUrlList.forEach(item=>{
+                promiseList.push(
+                    fetch(item)
+                    .then(()=>{
+                        console.log("请求返回了")
+                    })
+                );
+            })
+            Promise.all(promiseList).then(()=>{
+                console.log("执行下一组请求");
+                sendReq(urlList,maxNum)
+            })
+    }
+    sendReq(urlList,4);
+
 </script>
 </html>

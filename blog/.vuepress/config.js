@@ -176,6 +176,7 @@ module.exports = {
 
             '/codeblock/': [
                 //'',
+                'async,await源码尝试',
                 'vue双向绑定结合组件通讯',
                 'vue作用域插槽',
                 '函数节流和防抖',

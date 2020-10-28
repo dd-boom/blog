@@ -14,7 +14,7 @@ features:
 # footer:  biu~ boom!
 ---
 
-<div style="width:300px;margin:0 auto; padding:20px 0;">
+<div style="width:300px;position:fixed;bottom:100px">
 
 [![备案图片](/assets/img/beian.png) <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">粤公网安备 44010602008320</p>](http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010602008320)
 
