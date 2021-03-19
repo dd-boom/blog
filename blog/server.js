@@ -11,5 +11,5 @@ app.use(middleware);
 
 
 app.listen(80,()=>{
-    console.log('server is running on port 2003');
+    console.log('server is running on port 80');
 });
